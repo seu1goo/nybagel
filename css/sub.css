@@ -6,7 +6,7 @@
   width: 100%;
   height: 40vh;
   margin-top: 6.5em;
-  background: url(/img/img_story_bnr.jpg) no-repeat center bottom / cover;
+  background: url(../img/img_story_bnr.jpg) no-repeat center bottom / cover;
 }
 
 #storyBnr:after {
@@ -125,7 +125,7 @@
 #menuBnr .inner {
   position: relative;
   height: 100%;
-  background: url(/img/img_menu_bnr.jpg) no-repeat center / cover;
+  background: url(../img/img_menu_bnr.jpg) no-repeat center / cover;
 }
 
 #menuBnr .inner:after {
@@ -248,7 +248,7 @@
 #storeBnr .inner {
   position: relative;
   height: 100%;
-  background: url(/img/img_store_bnr.jpg) no-repeat center / cover;
+  background: url(../img/img_store_bnr.jpg) no-repeat center / cover;
 }
 
 #storeBnr .inner:after {
@@ -387,7 +387,7 @@
 #faqBnr .inner {
   position: relative;
   height: 100%;
-  background: url(/img/img_faq_bnr.jpg) no-repeat center / cover;
+  background: url(../img/img_faq_bnr.jpg) no-repeat center / cover;
 }
 
 #faqBnr .inner:after {
@@ -467,7 +467,7 @@
 #memBnr .inner {
   position: relative;
   height: 100%;
-  background: url(/img/img_membership_bnr.jpg) no-repeat center / cover;
+  background: url(../img/img_membership_bnr.jpg) no-repeat center / cover;
 }
 
 #memBnr .inner:after {
@@ -761,7 +761,7 @@
 #partBnr .inner {
   position: relative;
   height: 100%;
-  background: url(/img/img_partner_bnr.jpg) no-repeat center / cover;
+  background: url(../img/img_partner_bnr.jpg) no-repeat center / cover;
 }
 
 #partBnr .inner:after {

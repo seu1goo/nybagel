@@ -148,7 +148,7 @@ input[type="checkbox"]:checked:after {
   height: 100%;
   border: 0;
   border-radius: 2px;
-  background: url(/img/ico_chk.svg) no-repeat center / 100%;
+  background: url(../img/ico_chk.svg) no-repeat center / 100%;
 }
 
 textarea {
