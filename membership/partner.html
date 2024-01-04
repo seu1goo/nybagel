@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- title -->
+    <link rel="icon" href="/favicon.ico" />
+    <title>NewYork Bagel AVE.</title>
+
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NY Bagel" />
+    <meta property="og:title" content="NewYork Bagel AVE" />
+    <meta
+      property="og:description"
+      content="16시간 저온 숙성을 거쳐 쫄깃한 식감의 베이글을 맛볼 수 있는 뉴욕 베이글 애비뉴"
+    />
+    <meta property="og:image" content="/img/nybagel-og.png" />
+    <meta property="og:url" content="https://nybagel.co.kr" />
+
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="NY Bagel" />
+    <meta property="twitter:title" content="NewYork Bagel AVE" />
+    <meta
+      property="twitter:description"
+      content="16시간 저온 숙성을 거쳐 쫄깃한 식감의 베이글을 맛볼 수 있는 뉴욕 베이글 애비뉴"
+    />
+    <meta property="twitter:image" content="/img/nybagel-og.png" />
+    <meta property="twitter:url" content="https://nybagel.co.kr" />
+
+    <!-- reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+KR:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+      integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- jsEmail -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/sub.css" />
+
+    <!-- script -->
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/partner.js"></script>
+  </head>
+
+  <body>
+    <!-- loading -->
+    <div id="loading">
+      <div class="loadingio-spinner-rolling">
+        <div class="load">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- // loading -->
+
+    <div id="wrapper" class="partner">
+      <!-- header -->
+      <header class="move-down">
+        <div class="inner">
+          <div class="mobMenu">
+            <button type="button">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+          <h1 class="logo">
+            <a href="/">
+              <img src="/img/logo_wh.png" alt="뉴욕 베이글 애비뉴" />
+            </a>
+          </h1>
+          <div class="mobNavBg"></div>
+          <div class="navMenu">
+            <ul class="nav">
+              <li><a href="/story/story.html">브랜드 스토리</a></li>
+              <li>
+                <a href="/menu/bagel.html">상품 안내</a>
+                <ul class="sub">
+                  <li><a href="/menu/bagel.html">베이글</a></li>
+                  <li><a href="/menu/cream.html">스프레드</a></li>
+                  <li><a href="/menu/sandwich.html">샌드위치</a></li>
+                  <li><a href="/menu/drink.html">커피/음료</a></li>
+                </ul>
+              </li>
+              <li><a href="/store/store.html">매장 안내</a></li>
+              <li><a href="/faq/faq.html">FAQ</a></li>
+            </ul>
+            <ul class="tnb">
+              <li><a href="/membership/membership.html">협력사 상담</a></li>
+              <li><a href="/membership/partner.html">제안</a></li>
+              <li class="instagram">
+                <a
+                  href="https://www.instagram.com/ny_bagel_ave/"
+                  target="_blank"
+                >
+                  <img src="/img/ico_instagram.png" alt="인스타그램" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- // header -->
+
+      <!-- partBnr -->
+      <!-- <section id="partBnr">
+        <div class="inner">
+          <div class="bnrText">
+            <p>파트너 제안</p>
+            <h3>Partner Proposal</h3>
+          </div>
+        </div>
+      </section> -->
+      <!-- // partBnr -->
+
+      <section id="partProcedure">
+        <div class="inner">
+          <h4>제안 절차</h4>
+          <ul class="partPIcon">
+            <li>
+              <img src="/img/ico_partner_01.png" alt="온라인 상담" />
+              <h5>온라인 상담</h5>
+            </li>
+            <li>
+              <img src="/img/ico_partner_02.png" alt="방문 상담" />
+              <h5>방문 상담</h5>
+            </li>
+            <li>
+              <img src="/img/ico_partner_03.png" alt="제안 확정" />
+              <h5>제안 확정</h5>
+            </li>
+          </ul>
+          <ul class="partPDetail">
+            <li>
+              <h5>온라인 상담</h5>
+              <p>
+                하단의 온라인 상담을 작성하신 후 문의하기 버튼을 눌러주세요.
+              </p>
+            </li>
+            <li>
+              <h5>방문 상담</h5>
+              <p>
+                책임자/담당자가 내용 확인 후 직접 연락드려 상담을 진행합니다.
+              </p>
+            </li>
+            <li>
+              <h5>제안 확정</h5>
+              <p>구체적인 상담 후 계약을 진행하여 최종 확정됩니다.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- partContact -->
+      <section id="partContact">
+        <div class="inner">
+          <form id="contact-form-p">
+            <h4>온라인 상담</h4>
+            <input type="hidden" name="contact_number" />
+            <ul>
+              <li>
+                <label for="contactName">이름</label>
+                <input
+                  name="contactPName"
+                  id="contactPName"
+                  type="text"
+                  placeholder="성함을 입력해주세요."
+                />
+              </li>
+              <li>
+                <label for="contactTel">연락처</label>
+                <input
+                  name="contactPTel"
+                  id="contactPTel"
+                  type="tel"
+                  placeholder="연락처를 입력해주세요."
+                />
+              </li>
+              <li>
+                <label for="contactTel">이메일</label>
+                <input
+                  name="contactPMail"
+                  id="contactPMail"
+                  type="tel"
+                  placeholder="이메일 주소를 입력해주세요."
+                />
+              </li>
+              <li>
+                <label for="conText">문의내용</label>
+                <textarea
+                  name="contactPText"
+                  id="contactPText"
+                  placeholder="문의내용을 입력해주세요."
+                ></textarea>
+              </li>
+              <li class="policy">
+                <h5>개인정보처리방침</h5>
+                <div class="policy_note">
+                  <h6>
+                    <(주)그레이스랜드> 은(는) 정보주체의 자유와 권리 보호를
+                    위해「개인정보 보호법」및 관계 법령이 정한 바를 준수하여,
+                    적법하게 개인정보를 처리하고 안전하게 관리하고 있습니다.
+                    이에「개인정보 보호법」제30조에 따라 정보주체에게 개인정보
+                    처리에 관한 절차 및 기준을 안내하고, 이와 관련한 고충을
+                    신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이
+                    개인정보 처리방침을 수립·공개합니다.
+                  </h6>
+                  <ul>
+                    <li>
+                      A. 개인정보의 처리 목적 <br />
+                      <(주)그레이스랜드>은(는) 다음의 목적을 위하여 개인정보를
+                      처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의
+                      용도로는 이용되지 않으며, 이용 목적이 변경되는
+                      경우에는「개인정보 보호법」제18조에 따라 별도의 동의를
+                      받는 등 필요한 조치를 이행할 예정입니다. <br />
+                      1. 회원 및 관리 <br />
+                      회원제 서비스 제공에 따른 본인 식별·인증, 회원자격
+                      유지·관리, 서비스 부정이용 방지, 각종 고지·통지, 고충처리
+                      목적으로 개인정보를 처리합니다. <br />
+                      2. 재화 또는 서비스 제공 <br />
+                      서비스 제공, 계약서·청구서 발송, 콘텐츠 제공, 맞춤서비스
+                      제공, 본인인증, 요금 결제·정산 목적으로 개인정보를
+                      처리합니다. <br />
+                      3. 마케팅 및 광고 활용 <br />
+                      신규 서비스(제품) 개발 및 특화, 인구통계학적 특성에 따른
+                      서비스 제공 및 광고게재, 접속 빈도 파악, 회원의 서비스
+                      이용에 대한 통계, 이벤트 등 광고성 정보 전달 (회원의
+                      개인정보를 광고를 의뢰한 개인이나 단체에 제공하지
+                      않습니다.)
+                    </li>
+                    <li>
+                      B. 개인정보의 처리 및 보유 기간 <br />
+                      ① <(주)그레이스랜드>은(는) 법령에 따른 개인정보
+                      보유·이용기간 또는 정보주체로부터 개인정보를 수집 시에
+                      동의 받은 개인정보 보유·이용기간 내에서 개인정보를
+                      처리·보유합니다. <br />
+                      ② 각각의 개인정보 처리 및 보유 기간은 다음과 같습니다.
+                      <br />
+                      1. 홈페이지 회원 가입 및 관리 : 사업자/단체 홈페이지 탈퇴
+                      시까지 <br />
+                      다만, 다음의 사유에 해당하는 경우에는 해당 사유 종료
+                      시까지 <br />
+                      1&#41; 관계 법령 위반에 따른 수사·조사 등이 진행 중인
+                      경우에는 해당 수사·조사 종료 시까지 <br />
+                      2&#41; 홈페이지 이용에 따른 채권·채무관계 잔존 시에는 해당
+                      채권·채무관계 정산 시까지 <br />
+                      2. 재화 또는 서비스 제공 : 재화·서비스 공급완료 및
+                      요금결제·정산 완료시까지 <br />
+                      다만, 다음의 사유에 해당하는 경우에는 해당 기간 종료
+                      시까지 <br />
+                      1&#41;「전자상거래 등에서의 소비자 보호에 관한 법률」에
+                      따른 표시·광고, 계약내용 및 이행 등 거래에 관한 기록
+                      <br />
+                      - 표시·광고에 관한 기록 : 6개월 <br />
+                      - 계약 또는 청약철회, 대금결제, 재화 등의 공급기록 : 5년
+                      <br />
+                      - 소비자 불만 또는 분쟁처리에 관한 기록 : 3년 <br />
+                      2&#41; 「통신비밀보호법」에 따른 통신사실확인자료 보관
+                      <br />
+                      - 가입자 전기통신일시, 개시·종료시간, 상대방 가입자번호,
+                      사용도수, 발신기지국 위치추적자료 : 1년 <br />
+                      - 컴퓨터통신, 인터넷 로그기록자료, 접속지 추적자료 : 3개월
+                    </li>
+                    <li>
+                      C. 처리하는 개인정보의 항목 <br />
+                      <(주)그레이스랜드>은(는) 다음의 개인정보 항목을 처리하고
+                      있습니다. <br />
+                      1. 재화 또는 서비스 제공 <br />
+                      • 필수항목 : 성명, 휴대폰 번호, 가맹희망주소, 문의내용
+                      <br />
+                    </li>
+                    <li>
+                      E. 개인정보의 제3자 제공 ① <(주)그레이스랜드>은(는)
+                      정보주체의 개인정보를 개인정보의 처리 목적에서 명시한 범위
+                      내에서 만 처리하며, 정보주체의 동의, 법률의 특별한 규정
+                      등「개인정보 보호법」제17조 및 제18조에 해당하는 경우에만
+                      개인정보를 제3자에게 제공하고 그 이외에는 정보주체의
+                      개인정보를 제3자에게 제공하지 않습니다. <br />
+                      ② <(주)그레이스랜드>은(는) 원활한 서비스 제공을 위해
+                      다음의 경우 정보주체의 동의를 얻어 필요 최소한의 범위로만
+                      제공합니다. <br />
+                      ③ <(주)그레이스랜드>은(는) 정부 관계부처가 합동으로 발표한
+                      「긴급상황 시 개인정보 처리 및 보호수칙」에 따라 재난,
+                      감염병, 급박한 생명·신체 위험을 초래하는 사건·사고, 급박한
+                      재산 손실 등의 긴급상황이 발생하는 경우 정보주체의 동의
+                      없이 관계기관에 개인정보를 제공할 수 있습니다.
+                    </li>
+                    <li>
+                      F. 개인정보의 파기 절차 및 방법 <br />
+                      ① <(주)그레이스랜드>은(는) 개인정보 보유기간의 경과,
+                      처리목적 달성 등 개인정보가 불필요하게 되었을 때에는
+                      지체없이 해당 개인정보를 파기합니다. <br />
+                      ② 정보주체로부터 동의받은 개인정보 보유기간이 경과하거나
+                      처리 목적이 달성되었음에도 불구하고 다른 법령에 따라
+                      개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를
+                      별도의 데이터 베이스(DB)로 옮기거나 보관장소를 달리하여
+                      보존합니다. <br />
+                      ③ 개인정보 파기의 절차 및 방법은 다음과 같습니다. <br />
+                      1. 파기절차 <br />
+                      <(주)그레이스랜드>은(는) 파기 사유가 발생한 개인정보를
+                      선정하고, &lt;개인정보처리자&gt;의 개인 정보 보호책임자의
+                      승인을 받아 개인정보를 파기합니다. <br />
+                      2. 파기방법 <br />
+                      <(주)그레이스랜드>은(는) 전자적 파일 형태로 기록·저장된
+                      개인정보는 기록을 재생할 수 없도록 파기하며, 종이 문서에
+                      기록·저장된 개인정보는 분쇄기로 분쇄하거나 소각하여
+                      파기합니다.
+                    </li>
+                    <li>
+                      F. 개인정보의 파기 절차 및 방법 <br />
+                      ① <(주)그레이스랜드>은(는) 개인정보 보유기간의 경과,
+                      처리목적 달성 등 개인정보가 불필요하게 되었을 때에는
+                      지체없이 해당 개인정보를 파기합니다. <br />
+                      ② 정보주체로부터 동의받은 개인정보 보유기간이 경과하거나
+                      처리목적이 달성되었음에도 불구하고 다른 법령에 따라
+                      개인정보를 계속 보존하여야 하는 경우에는, 해당 개인정보를
+                      별도의 데이터베이스(DB)로 옮기거나 보관장소를 달리하여
+                      보존합니다. <br />
+                      ③ 개인정보 파기의 절차 및 방법은 다음과 같습니다. <br />
+                      1. 파기절차 <br />
+                      <(주)그레이스랜드>은(는) 파기 사유가 발생한 개인정보를
+                      선정하고, &lt;개인정보처리자명&gt;의 개인 정보
+                      보호책임자의 승인을 받아 개인정보를 파기합니다. <br />
+                      2. 파기방법 <br />
+                      <(주)그레이스랜드>은(는) 전자적 파일 형태로 기록·저장된
+                      개인정보는 기록을 재생할 수 없도록 파기하며, 종이 문서에
+                      기록·저장된 개인정보는 분쇄기로 분쇄하거나 소각하여
+                      파기합니다.
+                    </li>
+                    <li>
+                      G. 미이용자의 개인정보 파기 등에 관한 조치 <br />
+                      ① &lt;개인정보처리자명&gt;은(는) 1년간 서비스를 이용하지
+                      않은 이용자의 정보를 파기하고 있습니다. <br />
+                      다만, 다른 법령에서 정한 보존기간이 경과할 때까지 다른
+                      이용자의 개인정보와 분리하여 별도로 저장·관리할 수
+                      있습니다. <br />
+                      ② &lt;개인정보처리자명&gt;은(는) 개인정보의 파기 30일
+                      전까지 개인정보가 파기되는 사실, 기간 만료일 및 파기되는
+                      개인정보의 항목을 이메일, 문자 등 이용자에게 통지 가능한
+                      방법으로 알리고 있습니다. <br />
+                      ③ 개인정보의 파기를 원하지 않으시는 경우, 기간 만료 전
+                      서비스 로그인을 하시면 됩니다.
+                    </li>
+                    <li>
+                      H. 개인정보의 안전성 확보조치 <br />
+                      <(주)그레이스랜드>은(는) 개인정보의 안전성 확보를 위해
+                      다음과 같은 조치를 취하고 있습니다. <br />
+                      1. 관리적 조치 : 내부관리계획 수립·시행, 전담조직 운영,
+                      정기적 직원 교육 <br />
+                      2. 기술적 조치 : 개인정보처리시스템 등의 접근권한 관리,
+                      접근통제시스템 설치, 개인정보의 암호화, 보안프로그램 설치
+                      및 갱신 <br />
+                      3. 물리적 조치 : 전산실, 자료보관실 등의 접근통제
+                    </li>
+                    <li>
+                      I. 개인정보 보호책임자 <br />
+                      ① <(주)그레이스랜드>은(는) 개인정보 처리에 관한 업무를
+                      총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의
+                      불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보
+                      보호책임자를 지정하고 있습니다. <br />
+                      ‣ 개인정보 보호책임자 <br />
+                      성명 : <br />
+                      연락처 : &lt;&gt;, &lt;&gt; <br />
+                      ※ 개인정보보호 담당부서로 연결됩니다. <br />
+                      ‣ 개인정보보호 담당부서 <br />
+                      부서명 : <br />
+                      담당자 : <br />
+                      연락처 : &lt;&gt;, &lt;&gt; <br />
+                      ② 정보주체는 <(주)그레이스랜드>의 서비스(또는 사업)을
+                      이용하시면서 발생한 모든 개인정보보호 관련 문의, 불만처리,
+                      피해구제 등에 관한 사항을 개인정보 보호책임자 및
+                      담당부서로 문의할 수 있습니다. <(주)그레이스랜드> 은(는)
+                      정보주체의 문의에 대해 지체없이 답변 및 처리해드릴
+                      것입니다.
+                    </li>
+                  </ul>
+                </div>
+                <div class="chk_area">
+                  <input
+                    type="checkbox"
+                    id="chkNotes"
+                    name="chkNotes"
+                    required
+                  />
+                  <label for="chkNotes"
+                    >개인정보처리방침과 안내사항에 동의합니다.</label
+                  >
+                </div>
+              </li>
+            </ul>
+            <div class="btn_area">
+              <button type="submit" value="Send" class="btn">문의하기</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- partContact -->
+
+      <!-- footer -->
+      <footer>
+        <div class="inner">
+          <ul>
+            <li><b>Graceland Co., Ltd</b></li>
+            <li><b>ADDRESS.</b> 서울시 마포구 와우산로29바길 19, 1층</li>
+          </ul>
+          <p>
+            Copyright &copy; <span class="this-year"></span> NewYork Bagel AVE.
+            All rights reserved.
+          </p>
+        </div>
+      </footer>
+      <!-- // footer -->
+    </div>
+  </body>
+</html>

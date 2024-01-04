@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- title -->
+    <link rel="icon" href="/favicon.ico" />
+    <title>NewYork Bagel AVE.</title>
+
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NY Bagel" />
+    <meta property="og:title" content="NewYork Bagel AVE" />
+    <meta
+      property="og:description"
+      content="16시간 저온 숙성을 거쳐 쫄깃한 식감의 베이글을 맛볼 수 있는 뉴욕 베이글 애비뉴"
+    />
+    <meta property="og:image" content="/img/nybagel-og.png" />
+    <meta property="og:url" content="https://nybagel.co.kr" />
+
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="NY Bagel" />
+    <meta property="twitter:title" content="NewYork Bagel AVE" />
+    <meta
+      property="twitter:description"
+      content="16시간 저온 숙성을 거쳐 쫄깃한 식감의 베이글을 맛볼 수 있는 뉴욕 베이글 애비뉴"
+    />
+    <meta property="twitter:image" content="/img/nybagel-og.png" />
+    <meta property="twitter:url" content="https://nybagel.co.kr" />
+
+    <!-- reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+KR:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+      integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- jsEmail -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/sub.css" />
+
+    <!-- script -->
+    <script defer src="/js/common.js"></script>
+  </head>
+
+  <body>
+    <!-- loading -->
+    <div id="loading">
+      <div class="loadingio-spinner-rolling">
+        <div class="load">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- // loading -->
+
+    <div id="wrapper" class="faq">
+      <!-- header -->
+      <header class="move-down">
+        <div class="inner">
+          <div class="mobMenu">
+            <button type="button">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+          <h1 class="logo">
+            <a href="/">
+              <img src="/img/logo_wh.png" alt="뉴욕 베이글 애비뉴" />
+            </a>
+          </h1>
+          <div class="mobNavBg"></div>
+          <div class="navMenu">
+            <ul class="nav">
+              <li><a href="/story/story.html">브랜드 스토리</a></li>
+              <li>
+                <a href="/menu/bagel.html">상품 안내</a>
+                <ul class="sub">
+                  <li><a href="/menu/bagel.html">베이글</a></li>
+                  <li><a href="/menu/cream.html">스프레드</a></li>
+                  <li><a href="/menu/sandwich.html">샌드위치</a></li>
+                  <li><a href="/menu/drink.html">커피/음료</a></li>
+                </ul>
+              </li>
+              <li><a href="/store/store.html">매장 안내</a></li>
+              <li><a href="/faq/faq.html">FAQ</a></li>
+            </ul>
+            <ul class="tnb">
+              <li><a href="/membership/membership.html">협력사 상담</a></li>
+              <li><a href="/membership/partner.html">제안</a></li>
+              <li class="instagram">
+                <a
+                  href="https://www.instagram.com/ny_bagel_ave/"
+                  target="_blank"
+                >
+                  <img src="/img/ico_instagram.png" alt="인스타그램" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- // header -->
+
+      <!-- faqBnr -->
+      <section id="faqBnr">
+        <div class="inner">
+          <div class="bnrText">
+            <p>자주묻는질문</p>
+            <h3>FAQ</h3>
+          </div>
+        </div>
+      </section>
+      <!-- // faqBnr -->
+
+      <!-- faqList -->
+      <section id="faqList">
+        <div class="inner">
+          <table>
+            <colgroup>
+              <col width="10%" />
+              <col width="" />
+              <col width="20%" />
+              <col width="20%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>제목</th>
+                <th>글쓴이</th>
+                <th>작성시간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>03</td>
+                <td>
+                  <a href="/faq/faq_03.html"
+                    >베이글은 어떻게 보관해야 하나요?</a
+                  >
+                </td>
+                <td>뉴욕 베이글 애비뉴</td>
+                <td>2023.09.05</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>
+                  <a href="/faq/faq_02.html"
+                    >베이글이 딱딱해졌을 때는 어떻게 해야 하나요?</a
+                  >
+                </td>
+                <td>뉴욕 베이글 애비뉴</td>
+                <td>2023.09.05</td>
+              </tr>
+              <tr>
+                <td>01</td>
+                <td>
+                  <a href="/faq/faq_01.html"
+                    >베이글을 맛있게 먹는 방법은 어떤게 있나요?</a
+                  >
+                </td>
+                <td>뉴욕 베이글 애비뉴</td>
+                <td>2023.09.05</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <!-- // faqList -->
+
+      <!-- footer -->
+      <footer>
+        <div class="inner">
+          <ul>
+            <li><b>Graceland Co., Ltd</b></li>
+            <li><b>ADDRESS.</b> 서울시 마포구 와우산로29바길 19, 1층</li>
+          </ul>
+          <p>
+            Copyright &copy; <span class="this-year"></span> NewYork Bagel AVE.
+            All rights reserved.
+          </p>
+        </div>
+      </footer>
+      <!-- // footer -->
+    </div>
+  </body>
+</html>

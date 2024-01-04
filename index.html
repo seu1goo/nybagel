@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- title -->
+    <link rel="icon" href="/favicon.ico" />
+    <title>NewYork Bagel AVE.</title>
+
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="NY Bagel" />
+    <meta property="og:title" content="NewYork Bagel AVE" />
+    <meta
+      property="og:description"
+      content="16시간 저온 숙성을 거쳐 쫄깃한 식감의 베이글을 맛볼 수 있는 뉴욕 베이글 애비뉴"
+    />
+    <meta property="og:image" content="/img/nybagel-og.png" />
+    <meta property="og:url" content="https://nybagel.co.kr" />
+
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="NY Bagel" />
+    <meta property="twitter:title" content="NewYork Bagel AVE" />
+    <meta
+      property="twitter:description"
+      content="16시간 저온 숙성을 거쳐 쫄깃한 식감의 베이글을 맛볼 수 있는 뉴욕 베이글 애비뉴"
+    />
+    <meta property="twitter:image" content="/img/nybagel-og.png" />
+    <meta property="twitter:url" content="https://nybagel.co.kr" />
+
+    <!-- reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans+KR:wght@100;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+      integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- jsEmail -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <!-- script -->
+    <script defer src="/js/common.js"></script>
+    <script defer src="/js/main.js"></script>
+  </head>
+
+  <body>
+    <!-- loading -->
+    <div id="loading">
+      <div class="loadingio-spinner-rolling">
+        <div class="load">
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- // loading -->
+
+    <div id="wrapper" class="home">
+      <!-- header -->
+      <header>
+        <div class="inner">
+          <div class="mobMenu">
+            <button type="button">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </div>
+          <h1 class="logo">
+            <a href="/">
+              <img src="/img/logo_wh.png" alt="뉴욕 베이글 애비뉴" />
+            </a>
+          </h1>
+          <div class="mobNavBg"></div>
+          <div class="navMenu">
+            <ul class="nav">
+              <li><a href="/story/story.html">브랜드 스토리</a></li>
+              <li>
+                <a href="/menu/bagel.html">상품 안내</a>
+                <ul class="sub">
+                  <li><a href="/menu/bagel.html">베이글</a></li>
+                  <li><a href="/menu/cream.html">스프레드</a></li>
+                  <li><a href="/menu/sandwich.html">샌드위치</a></li>
+                  <li><a href="/menu/drink.html">커피/음료</a></li>
+                </ul>
+              </li>
+              <li><a href="/store/store.html">매장 안내</a></li>
+              <li><a href="/faq/faq.html">FAQ</a></li>
+            </ul>
+            <ul class="tnb">
+              <li><a href="/membership/membership.html">협력사 상담</a></li>
+              <li><a href="/membership/partner.html">제안</a></li>
+              <li class="instagram">
+                <a
+                  href="https://www.instagram.com/ny_bagel_ave/"
+                  target="_blank"
+                >
+                  <img src="/img/ico_instagram.png" alt="인스타그램" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <!-- // header -->
+
+      <!-- main -->
+      <section id="main">
+        <div class="mainSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="/img/img_home_main_01.jpg"
+                  alt="16시간의 저온 숙성을 거쳐 쫄깃한 식감을 가진 베이글"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="/img/img_home_main_02.jpg"
+                  alt="그릭 요거트가 더해진 7가지의 특별한 크림치즈"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="/img/img_home_main_03.jpg"
+                  alt="다양한 베이글과 속재료를 더해 든든한 베이글 샌드위치"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <!-- // main -->
+
+      <!-- picnic -->
+      <section id="picnic">
+        <div class="inner">
+          <article class="picnicImg">
+            <img src="/img/img_picnic_main_01.jpg" alt="피크닉" />
+          </article>
+          <article class="picnicText">
+            <h3>Picnic</h3>
+            <h4>뉴욕 베이글 애비뉴와 함께 즐기는 피크닉</h4>
+            <h5>
+              선선한 바람 불어오는 9월! <br />
+              맛있는 베이글 샌드위치나 베이글 + 크림치즈 조합의 간식과 함께
+              <br />
+              나들이를 떠나 보는 것은 어떨까요?
+            </h5>
+            <a href="/menu/bagel.html">
+              <p>More Bagel</p>
+              <span class="material-symbols-outlined">east</span>
+            </a>
+            <img src="/img/img_picnic_main_02.jpg" alt="" />
+          </article>
+        </div>
+      </section>
+      <!-- picnic -->
+
+      <!-- kitchen -->
+      <section id="kitchen">
+        <div class="inner">
+          <article class="kitchenText">
+            <h4>뉴욕 베이글 애비뉴의 베이글은</h4>
+            <h5>
+              당일 입고된 신선한 재료를 사용해 <br />
+              베이커의 수제 반죽 후 16시간의 숙성 시간을 거쳐 <br />
+              더욱더 쫀득하고 맛있는 식감으로 완성됩니다.
+            </h5>
+          </article>
+          <article class="kitchenImg">
+            <img src="/img/img_kitchen_main_02.jpg" alt="반죽" />
+            <img src="/img/img_kitchen_main_03.jpg" alt="반죽" />
+            <img src="/img/img_kitchen_main_04.jpg" alt="반죽" />
+          </article>
+        </div>
+      </section>
+      <!-- // kitchen -->
+
+      <!-- sandwich -->
+      <section id="sandwich">
+        <div class="inner">
+          <article class="sandwichText">
+            <h3>Sandwich</h3>
+            <h4>뉴욕 스타일 베이글로 더 맛있는 샌드위치</h4>
+            <h5>
+              베이글의 성지인 뉴욕, 뉴요커들의 아침을 책임지는 베이글 샌드위치를
+              <br />
+              한국인 입맛에 맞도록 구성한 4가지의 샌드위치를 만나보세요!
+            </h5>
+            <a href="/menu/sandwich.html">
+              <p>More Sandwich</p>
+              <span class="material-symbols-outlined">east</span>
+            </a>
+          </article>
+          <article class="sandwichImg">
+            <img src="/img/img_sandwich_main_01.jpg" alt="아보카도 샌드위치" />
+            <img src="/img/img_sandwich_main_02.jpg" alt="베이글 샌드위치" />
+          </article>
+        </div>
+      </section>
+      <!-- sandwich -->
+
+      <!-- instagram -->
+      <section id="instagram">
+        <div class="inner">
+          <a href="https://www.instagram.com/ny_bagel_ave/" target="_blank">
+            <img src="/img/ico_instagram_color.png" alt="인스타그램" />
+            <p>@ny_bagel_ave</p>
+          </a>
+        </div>
+        <div class="instagramSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="/img/img_bagel_pretzel.jpg"
+                  alt="솔트 프렛즐 베이글"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="/img/img_bagel_everything.jpg"
+                  alt="에브리씽 베이글"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img src="/img/img_bagel_jalapenos.jpg" alt="할라피뇨 베이글" />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img
+                  src="/img/img_bagel_spring.jpg"
+                  alt="스프링 어니언 베이글"
+                />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img src="/img/img_bagel_blueberry.jpg" alt="블루베리 베이글" />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img src="/img/img_bagel_onion.jpg" alt="어니언 베이글" />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img src="/img/img_bagel_olive.jpg" alt="치즈 올리브 베이글" />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img src="/img/img_bagel_cinnamon.jpg" alt="시나몬 베이글" />
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure>
+                <img src="/img/img_bagel_basil.jpg" alt="바질 베이글" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- // instagram -->
+
+      <!-- footer -->
+      <footer>
+        <div class="inner">
+          <ul>
+            <li><b>Graceland Co., Ltd</b></li>
+            <li><b>ADDRESS.</b> 서울시 마포구 와우산로29바길 19, 1층</li>
+          </ul>
+          <p>
+            Copyright &copy; <span class="this-year"></span> NewYork Bagel AVE.
+            All rights reserved.
+          </p>
+        </div>
+      </footer>
+      <!-- // footer -->
+    </div>
+  </body>
+</html>
